@@ -9,7 +9,12 @@
 
 #welcome-section{
     height: 100vh;
-    
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    background-color: aliceblue;
+
 }
 
 #navbar{
@@ -30,9 +35,46 @@ a{
     font-size: 20px;
 }
 
-.project-title{
+.project-tile{
     display: flex;
     flex-direction: column;
     height: 370px;
-    width: 350;
+    width: 350px;
 }
+.project-tile img{
+    width: 300px;
+    height: 300px;
+    
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: 400px 400px 400px;
+    padding: 5px;
+  }
+  .grid-item {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 10px;
+    font-size: 30px;
+  
+    text-align: center;
+  }
+  .container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  @media only screen and (max-width: 600px) {
+       .grid-container{
+        grid-template-columns: 1fr;
+        padding: 2px;
+        align-items: center;
+        justify-content: center;
+       
+       }
+       .grid-item{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+       }
+  }
